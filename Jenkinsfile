@@ -16,8 +16,6 @@ pipeline {
 			}}
 		stage('Slack') {
 			steps {
-				slackSend baseUrl: 'https://hooks.slack.com/services/', 
-					channel: '#pink3-slack', color: 'good', message: 'welcome to pink3 slack integration',
-					notifyCommitters: true, teamDomain: 'devops', tokenCredentialId: 'pink3', username: 'pink3-slack'
+				slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#pink3-slack', color: 'good', message: 'welcome to pink3 slack integration',notifyCommitters: true, teamDomain: 'devops', tokenCredentialId: 'pink3', username: 'pink3-slack'
 			}}
 	}}
